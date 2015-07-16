@@ -3,14 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/service/CourseService.java</file>
-            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/dao/impl/CourseDbDAOImpl.java</file>
-            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/dao/GenericDAO.java</file>
-            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/course/edit.jsp</file>
-            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/course/delete.jsp</file>
-            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/course/save.jsp</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/servlet/CourseServlet.java</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/sHeader.jsp</file>
             <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/course/add.jsp</file>
-            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/course/index.jsp</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/courses/index.jsp</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/WEB-INF/web.xml</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/header.jsp</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/courses/sAdd.jsp</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/servlet/AddCourseServlet.java</file>
             <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/dbUtil/DBConnection.java</file>
             <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/entity/Course.java</file>
         </group>
