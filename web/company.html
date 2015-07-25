@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-2.1.4.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        
+        <div id="companies">
+            
+        </div>
+        
+        <div>
+            <div id="name"></div>  
+            <div id="phone"></div>
+            <div id="email"></div>
+            
+        </div>
+        <a href="javascript:void(0)" id="fetch">Fetch Company</a>
+        
+        
+        
+        <form action="" id="company-form">
+            <input type="text" name="name" placeholder="Enter Name"/><br/>
+            <input type="text" name="email" placeholder="Enter Email"/><br/>
+            <input type="text" name="contact_no" placeholder="Enter Phone"/><br/>
+            <input type="submit" name="submit" id="btn-submit" value="Save"/><br/>
+        </form>
+        <script>
+            
+            $(document).on("ready",function(){
+               
+               $("#fetch").on("click",function(){
+                  
+                  $.getJSON("http://localhost:8080/JAXRSProject/api/hello/company",null,function(data){
+                     $("#name").html(data.name);
+                     $("#phone").html(data.contactNo);
+                     $("#email").html(data.email);
+                  });
+        
+               });
+               
+               $("#btn-submit").on('click',function(){
+                   $.post('http://localhost:8080/JAXRSProject/api/company/add',$("company-form").serialize(),function(data){
+                       alert(data.message);
+                   },"JSON");
+                   return false;
+               });
+               
+               
+               $.get("http://localhost:8080/JAXRSProject/api/company",null,function(data){
+                   
+                   var $html="";
+                   $.each(data,function(i,o){
+                       $html+="<li><a href='javascript:void' onclick='getCompany(" +o.id+ ")'>" + o.name + "</a>";
+                       /*$html+="<p>";
+                       $html+="NAME:" + o.name + "<br/>";
+                       $html+="Email:" + o.email + "<br/>";
+                       $html+="Phone:" + o.contactNo + "<br/>";
+                       $html+="</p>";*/
+                   });
+                   $("#companies").html($html);
+                   
+               },"JSON");
+            });
+            
+            function getCompany(id){
+                $.getJSON("http://localhost:8080/JAXRSProject/api/company/"+ id ,null,function(data){
+                     $("#name").html(data.name);
+                     $("#phone").html(data.contactNo);
+                     $("#email").html(data.email);
+                  });                
+            }
+        </script>
+    </body>
+</html>
