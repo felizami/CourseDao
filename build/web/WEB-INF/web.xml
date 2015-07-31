@@ -12,11 +12,11 @@
         <servlet-name>courses</servlet-name>
         <servlet-class>com.leapfrog.coursedao.servlet.CourseServlet</servlet-class>
     </servlet>
-    <servlet-mapping>
+   <servlet-mapping>
         <servlet-name>courses</servlet-name>
         <url-pattern>/courses</url-pattern>
     </servlet-mapping>
-    <servlet>
+<!--     <servlet>
         <servlet-name>sAdd</servlet-name>
         <servlet-class>com.leapfrog.coursedao.servlet.CRUDCourseServlet</servlet-class>
     </servlet>
@@ -41,5 +41,5 @@
     <servlet-mapping>
         <servlet-name>sDelete</servlet-name>
         <url-pattern>/courses/delete</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
 </web-app>

@@ -5,17 +5,35 @@
  */
 package com.leapfrog.coursedao.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author Anuz
  */
-public class Course {
+@Entity
+@Table(name = "course")
+public class Course implements java.io.Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
+    @Column(name = "courseName")
     private String courseName;
+    @Column(name = "description")
     private String description;
+    @Column(name = "duration")
     private double duration;
+    @Column(name = "durationType")
     private String durationType;
+    @Column(name = "amount")
     private double amount;
+    @Column(name = "status")
     private boolean status;
 
     public Course() {
@@ -37,7 +55,6 @@ public class Course {
         this.courseName = courseName;
     }
 
-    
     public String getDescription() {
         return description;
     }
@@ -82,8 +99,5 @@ public class Course {
     public String toString() {
         return "Course{" + "id=" + id + ", courseId=" + courseName + ", Description=" + description + ", duration=" + duration + ", durationType=" + durationType + ", amount=" + amount + ", status=" + status + '}';
     }
-    
-    
-           
-    
+
 }

@@ -6,8 +6,7 @@
 package com.leapfrog.coursedao.service;
 
 import com.leapfrog.coursedao.dao.CourseDAO;
-import com.leapfrog.coursedao.dao.impl.CourseDbDAOImpl;
-import com.leapfrog.coursedao.dao.impl.CourseListDAOImpl;
+import com.leapfrog.coursedao.dao.impl.CourseJPADAOImpl;
 import com.leapfrog.coursedao.entity.Course;
 import java.sql.SQLException;
 import java.util.List;
@@ -17,7 +16,7 @@ import java.util.List;
  * @author Anuz
  */
 public class CourseService {
-    private CourseDAO courseDAO=new CourseDbDAOImpl();
+    private CourseDAO courseDAO=new CourseJPADAOImpl();
     
     public int insert(Course c) throws ClassNotFoundException, SQLException {
        return courseDAO.insert(c);

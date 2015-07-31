@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/service/CourseService.java</file>
             <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/servlet/CourseServlet.java</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/api/CourseAPI.java</file>
             <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/WEB-INF/web.xml</file>
             <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/web/courses/index.jsp</file>
             <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/servlet/CRUDCourseServlet.java</file>
+            <file>file:/F:/eclipseJavaEEworkspace/leapfrog/CourseDao/src/java/com/leapfrog/coursedao/entity/Course.java</file>
         </group>
     </open-files>
 </project-private>
